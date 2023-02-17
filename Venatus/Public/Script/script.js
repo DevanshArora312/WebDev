@@ -19,5 +19,7 @@ function openStars(){
 function openOver(){
   $('body > main > section > section:nth-child(2)').load("/Views/NavBar/Overview.html");
 }
-
+function openRealRepo(){
+  $('body > main > section > section:nth-child(2)').load("/Views/Extra/RealRepo.html");
+}
 openOver()
