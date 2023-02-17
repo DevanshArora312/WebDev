@@ -217,3 +217,10 @@
     margin:1rem;
     padding:1rem;
   }
+  .repo{
+    text-decoration: none;
+    color:blue;
+  }
+  .repo:hover{
+    opacity: 0.6;
+  }
