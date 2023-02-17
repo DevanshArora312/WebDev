@@ -210,3 +210,10 @@
     height: auto;
     width: auto;
   }
+.pack-div {
+    border-color: grey;
+    border-radius: 10px;
+    border-style: solid;
+    margin:1rem;
+    padding:1rem;
+  }
