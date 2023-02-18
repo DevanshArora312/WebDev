@@ -1,126 +1,63 @@
 <div>
-    <input
-      type="search"
-      placeholder="Find a Repository.."
-      style="width: 500px; height: 2rem; border-radius: 10px"
-    />
-    <span class="repo-down-search">
-      <button type="drop" class="repo-dropbtn" >
-        Type &#8681;
-      </button>
-        <div class="repo-dropdown-content" id="drop1">
+  <input
+    type="search"
+    placeholder="Find a Repository.."
+    style="width: 500px; height: 2rem; border-radius: 10px"
+  />
+  <span class="repo-down-search">
+    <button type="drop" class="repo-dropbtn" onclick="dropClick1()">
+      Type &#8681;
+    </button>
+    <div class="repo-dropdown-content1" id="drop1">
       <div style="width: 100%">
-        <span style="text-align: left">Select type</span>
-        <span style="margin-left: 2.5rem"
-          ><button>x</button></span
-            ></div>
-        <div>All</div>
-        <div>Sources</div>
-        <div>Archieved</div>
-        <div>Forks</div>
-        <div>Mirrors</div>
-        <div>Templates</div>
-      </div>
-    </span>
-    <span class="repo-down-search">
-      <button type="drop" class="repo-dropbtn" >
-        Languages &#8681;
-      </button>
-        <div class="repo-dropdown-content" id="drop2">
-      <div style="width: 100%">
-        <span style="text-align: left">Select type</span>
-        <span style="margin-left: 2.5rem"
-          ><button onclick="hideContent()">x</button></span
+        <span style="text-align: left; padding: 0.2rem">Select type</span>
+        <span style="margin-left: 3rem"
+          ><button onclick="hideContent1()">x</button></span
         >
       </div>
-      
-        <div>All</div>
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JavaScript</div>
-        <div>Python</div>
-      </div>
-    </span>
-    <span class="repo-down-search">
-      <button type="drop" class="repo-dropbtn" >
-        Sort &#8681;
-      </button>
-      <div class="repo-dropdown-content" id="drop3">
+      <hr />
+      <div class="rep-dat">All</div>
+      <hr />
+      <div class="rep-dat">Sources</div>
+      <hr />
+      <div class="rep-dat">Archieved</div>
+      <hr />
+      <div class="rep-dat">Forks</div>
+      <hr />
+      <div class="rep-dat">Mirrors</div>
+      <hr />
+      <div class="rep-dat">Templates</div>
+    </div>
+  </span>
+  <span class="repo-down-search">
+    <button type="drop" class="repo-dropbtn" onclick="dropClick2()">
+      Languages &#8681;
+    </button>
+    <div class="repo-dropdown-content2" id="drop2">
       <div style="width: 100%">
-        <span style="text-align: left">Select type</span>
-        <span style="margin-left: 2.5rem"
-          ><button onclick="hideContent()">x</button></span
+        <span style="text-align: left; padding: 0.2rem">Select type</span>
+        <span style="margin-left: 3rem"
+          ><button onclick="hideContent2()">x</button></span
         >
       </div>
-        <div>All</div>
-        <div>Last Updated</div>
-        <div>Name</div>
-        <div>Stars</div>
-      </div>
-    </span>
-  </div>
-  <hr style="width: 120%" />
-  <div>
-    <strong style="font-size: 20px"
-      ><a href="#" class="repo">react-ecommerce</a></strong
-    >
-  
-    <span class="public-tag2"> Public </span>
-    <p>An e-commerce website created using reactjs</p>
-    <span class="dot" style="background-color: #d5db25"></span>
-    <span style="margin-right: 1rem">&nbsp;JavaScript</span>
-    <span> <img src="/Public/Images/star.png" /> </span>1
-    <span style="margin-left: 1rem">Updated 2 days ago</span>
-  </div>
-  <hr style="width: 120%" />
-  <div>
-    <strong style="font-size: 20px"><a href="#" class="repo">Hacknitr</a></strong>
-    <span class="public-tag2"> Public </span>
-    <p></p>
-    <span class="dot" style="background-color: #d5db25"></span>
-    <span style="margin-right: 1rem">&nbsp;JavaScript </span>
-    <span> <img src="/Public/Images/star.png" /> </span>1
-    <span style="margin-left: 1rem">Updated 2 months ago</span>
-  </div>
-  <hr style="width: 120%" />
-  <div>
-    <strong style="font-size: 20px"
-      ><a href="#" class="repo">pg-project</a></strong
-    >
-    <span class="public-tag2"> Public </span>
-    <p></p>
-    <span class="dot" style="background-color: rgb(212, 31, 31)"></span>
-    <span style="margin-right: 1rem">&nbsp;HTML</span>
-  
-    <span>
-      <img src="/Public/Images/star.png" />
-    </span>
-    1
-    <span style="margin-left: 1rem">Updated a year ago</span>
-  </div>
-  <hr style="width: 120%" />
-  <div>
-    <strong style="font-size: 20px"
-      ><a href="#" class="repo">Foxiz-News</a></strong
-    >
-    <span class="public-tag2"> Public </span>
-    <p>A basic interface practice using CSS</p>
-    <span class="dot" style="background-color: rgb(167, 34, 167)"></span>
-    <span style="margin-right: 1rem">&nbsp;CSS </span>
-    <span> <img src="/Public/Images/star.png" /></span>1
-    <span style="margin-left: 1rem">Updated 2 years ago</span>
-  </div>
-  <hr style="width: 120%" />
-  <div>
-    <strong style="font-size: 20px"
-      ><a href="#" class="repo">Password-mgmt-sys</a></strong
-    >
-    <span class="public-tag2"> Public </span>
-    <p>Password management system created using python(tkinter) and mysql</p>
-    <span class="dot" style="background-color: rgb(34, 167, 63)"></span>
-    <span style="margin-right: 1rem">&nbsp;Python </span>
-    <span> <img src="/Public/Images/star.png" /> </span>1
-    <span style="margin-left: 1rem">Updated 2 years ago</span>
-  </div>
-  <hr style="width: 120%" />
-  
+      <hr />
+      <div class="rep-dat">All</div>
+      <hr />
+      <div class="rep-dat">HTML</div>
+      <hr />
+      <div class="rep-dat">CSS</div>
+      <hr />
+      <div class="rep-dat">JavaScript</div>
+      <hr />
+      <div class="rep-dat">Python</div>
+    </div>
+  </span>
+  <span class="repo-down-search">
+    <button type="drop" class="repo-dropbtn" onclick="dropClick3()">
+      Sort &#8681;
+    </button>
+    <div class="repo-dropdown-content3" id="drop3">
+      <div style="width: 100%">
+        <span style="text-align: left; padding: 0.2rem">Select type</span>
+        <span style="margin-left: 3rem"
+          ><button onclick="hideC
